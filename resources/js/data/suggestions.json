@@ -1,0 +1,65 @@
+[
+    {
+        "image": "images/suggestion-one.png",
+        "title": "Destination One",
+        "price": "9999",
+        "details": "Car • Hotels • Resorts",
+        "link": "#"
+    },
+    {
+        "image": "images/suggestion-two.png",
+        "title": "Destination Two",
+        "price": "7999",
+        "details": "Car • Hotels • Resorts",
+        "link": "#"
+    },
+    {
+        "image": "images/suggestion-three.png",
+        "title": "Destination Three",
+        "price": "12999",
+        "details": "Car • Hotels • Resorts",
+        "link": "#"
+    },
+    {
+        "image": "images/suggestion-four.png",
+        "title": "Destination Four",
+        "price": "8999",
+        "details": "Car • Hotels • Resorts",
+        "link": "#"
+    },
+    {
+        "image": "images/suggestion-five.png",
+        "title": "Destination Five",
+        "price": "10999",
+        "details": "Car • Hotels • Resorts",
+        "link": "#"
+    },
+    {
+        "image": "images/suggestion-six.png",
+        "title": "Destination Six",
+        "price": "6999",
+        "details": "Car • Hotels • Resorts",
+        "link": "#"
+    },
+    {
+        "image": "images/suggestion-seven.png",
+        "title": "Destination Seven",
+        "price": "11999",
+        "details": "Car • Hotels • Resorts",
+        "link": "#"
+    },
+    {
+        "image": "images/suggestion-eight.png",
+        "title": "Destination Eight",
+        "price": "9499",
+        "details": "Car • Hotels • Resorts",
+        "link": "#"
+    },
+    {
+        "image": "images/suggestion-nine.png",
+        "title": "Destination Nine",
+        "price": "10499",
+        "details": "Car • Hotels • Resorts",
+        "link": "#"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "image": "/public/images/marquee-eight.png",
+        "title": "Full Tour",
+        "description": "Search Hotels & Places Hire to our most popular destinations",
+        "buttonText": "Book Tour",
+        "buttonLink": "#"
+    },
+    {
+        "image": "images/marquee-two.png",
+        "title": "Hotels",
+        "description": "Search hotels & places hire to our most popular destinations",
+        "buttonText": "Show Hotels",
+        "buttonLink": "#"
+    },
+    {
+        "image": "images/marquee-three.png",
+        "title": "Rent a Car",
+        "description": "Get a car for your family and loved ones",
+        "buttonText": "Book Car",
+        "buttonLink": "#"
+    },
+    {
+        "image": "images/marquee-four.png",
+        "title": "Professional Guide",
+        "description": "Get a professional guide to enhance your trip experience 10x",
+        "buttonText": "Show Guides",
+        "buttonLink": "#"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "question": "What services do you offer?",
+        "answer": "We offer a variety of travel-related services, including hotel bookings, car rentals, guided tours, and travel planning to make your trip seamless and enjoyable."
+    },
+    {
+        "id": 2,
+        "question": "How can I book a tour?",
+        "answer": "You can book a tour directly on our website by selecting your desired destination and package. Alternatively, you can contact our support team for assistance."
+    },
+    {
+        "id": 3,
+        "question": "Do you provide professional guides?",
+        "answer": "Yes, we provide professional guides to enhance your travel experience. Our guides are knowledgeable and experienced in the destinations we cover."
+    },
+    {
+        "id": 4,
+        "question": "Can I customize my travel package?",
+        "answer": "Absolutely! We offer customizable travel packages to suit your preferences. Contact us to discuss your requirements, and we’ll create a tailored package for you."
+    },
+    {
+        "id": 5,
+        "question": "What is your cancellation policy?",
+        "answer": "Our cancellation policy varies depending on the service or package booked. Please refer to the specific terms and conditions provided during the booking process."
+    }
+]
