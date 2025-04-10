@@ -31,7 +31,7 @@
             <!-- Plan Tour -->
             <li class="flex items-center gap-2 py-2 hover:bg-gray-100">
                 <i class="bi bi-geo-alt-fill text-gray-500"></i> <!-- Solid Bootstrap Icon -->
-                <a href="#" class="block">Plan Tour</a>
+                <a href="{{ route('planTour') }}" class="block">Plan Tour</a>
             </li>
 
             <!-- Car Rent -->

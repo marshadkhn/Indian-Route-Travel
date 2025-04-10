@@ -1,0 +1,38 @@
+{
+    "title": "Top Categories",
+    "description": "Discover our most popular travel experiences",
+    "categories": [
+        {
+            "id": 1,
+            "image": "images/adventure.jpg",
+            "title": "Adventure Tours",
+            "count": "65+ Packages",
+            "slug": "adventure-tours"
+        },
+        {
+            "id": 2,
+            "image": "images/beach.jpg",
+            "title": "Beach Getaways",
+            "count": "120+ Destinations",
+            "slug": "beach-getaways"
+        },
+        {
+            "id": 3,
+            "image": "images/city.jpg",
+            "title": "City Explorations",
+            "count": "200+ Destinations",
+            "slug": "city-explorations"
+        },
+        {
+            "id": 4,
+            "image": "images/mountain.jpg",
+            "title": "Mountain Retreats",
+            "count": "85+ Destinations",
+            "slug": "mountain-retreats"
+        }
+    ],
+    "cta": {
+        "text": "View All Categories",
+        "url": "/categories"
+    }
+}

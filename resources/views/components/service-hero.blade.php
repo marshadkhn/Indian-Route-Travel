@@ -6,7 +6,8 @@
 
 // Search Bar
 'searchPlaceholders' => ['Destination', 'Check-in', 'Check-out'],
-'searchButtonText' => 'Search',
+'searchButtonText' => '',
+
 
 
 // Marquee Images
@@ -61,7 +62,8 @@
                     @endforeach
                     <button
                         type="submit"
-                        class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-md transition-colors duration-200">
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-3 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
+                        <i class="bi bi-search"></i> <!-- Bootstrap search icon -->
                         {{ $searchButtonText }}
                     </button>
                 </form>

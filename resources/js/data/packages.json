@@ -1,0 +1,82 @@
+{
+    "title": "Pre-Planned Packages",
+    "description": "Curated travel experiences for your perfect vacation",
+    "packages": [
+        {
+            "id": 1,
+            "location": "Bali, Indonesia",
+            "image": "/images/destination.png",
+            "duration": "6 Days / 5 Nights",
+            "price": "$1,299",
+            "slug": "bali-adventure"
+        },
+        {
+            "id": 2,
+            "location": "Santorini, Greece",
+            "image": "/images/destination.png",
+            "duration": "7 Days / 6 Nights",
+            "price": "$1,899",
+            "slug": "santorini-escape"
+        },
+        {
+            "id": 3,
+            "location": "Kyoto, Japan",
+            "image": "/images/destination.png",
+            "duration": "8 Days / 7 Nights",
+            "price": "$2,499",
+            "slug": "kyoto-culture"
+        },
+        {
+            "id": 4,
+            "location": "Paris, France",
+            "image": "/images/destination.png",
+            "duration": "5 Days / 4 Nights",
+            "price": "$1,599",
+            "slug": "paris-romance"
+        },
+        {
+            "id": 5,
+            "location": "Machu Picchu, Peru",
+            "image": "/images/destination.png",
+            "duration": "9 Days / 8 Nights",
+            "price": "$2,199",
+            "slug": "machu-adventure"
+        },
+        {
+            "id": 6,
+            "location": "Safari, Kenya",
+            "image": "/images/destination.png",
+            "duration": "10 Days / 9 Nights",
+            "price": "$3,299",
+            "slug": "kenya-safari"
+        },
+        {
+            "id": 7,
+            "location": "New York, USA",
+            "image": "/images/destination.png",
+            "duration": "6 Days / 5 Nights",
+            "price": "$1,799",
+            "slug": "new-york-city"
+        },
+        {
+            "id": 8,
+            "location": "Sydney, Australia",
+            "image": "/images/destination.png",
+            "duration": "8 Days / 7 Nights",
+            "price": "$2,899",
+            "slug": "sydney-explorer"
+        },
+        {
+            "id": 9,
+            "location": "Dubai, UAE",
+            "image": "/images/destination.png",
+            "duration": "5 Days / 4 Nights",
+            "price": "$1,999",
+            "slug": "dubai-luxury"
+        }
+    ],
+    "cta": {
+        "text": "View All Packages",
+        "url": "/packages"
+    }
+}
