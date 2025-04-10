@@ -8,31 +8,31 @@
         <!-- Two Vertical Marquees -->
         <div class="grid grid-cols-2 gap-6">
             <!-- Left Marquee (Top to Bottom) -->
-            <div class="relative h-[28rem] overflow-hidden">
-                <div class="marquee-vertical-down flex flex-col gap-6">
-                    @for ($i = 0; $i < 5; $i++)
-                        <div class="bg-white shadow-md rounded-lg p-6 w-full">
-                        <p class="text-lg font-semibold text-gray-800 mb-2">"Amazing experience! Highly recommend."</p>
-                        <p class="text-sm text-gray-600">- John Doe</p>
-                        <p class="text-sm text-gray-500">New York, USA</p>
-                </div>
-                @endfor
-            </div>
-        </div>
+            <x-marquee 
+                type="review"
+                direction="down"
+                :reviews="[
+                    ['text' => 'Amazing experience! Highly recommend.', 'name' => '- John Doe', 'location' => 'New York, USA'],
+                    ['text' => 'The trip was beyond our expectations!', 'name' => '- Maria Garcia', 'location' => 'Madrid, Spain'],
+                    ['text' => 'Perfectly organized from start to finish.', 'name' => '- Robert Johnson', 'location' => 'Toronto, Canada'],
+                    ['text' => 'Will definitely book with them again.', 'name' => '- Priya Sharma', 'location' => 'Delhi, India'],
+                    ['text' => 'Great value for money and excellent service.', 'name' => '- David Wilson', 'location' => 'Sydney, Australia']
+                ]"
+            />
 
-        <!-- Right Marquee (Bottom to Top) -->
-        <div class="relative h-[28rem] overflow-hidden">
-            <div class="marquee-vertical-up flex flex-col gap-6">
-                @for ($i = 0; $i < 5; $i++)
-                    <div class="bg-white shadow-md rounded-lg p-6 w-full">
-                    <p class="text-lg font-semibold text-gray-800 mb-2">"The best travel service I’ve ever used!"</p>
-                    <p class="text-sm text-gray-600">- Jane Smith</p>
-                    <p class="text-sm text-gray-500">London, UK</p>
-            </div>
-            @endfor
+            <!-- Right Marquee (Bottom to Top) -->
+            <x-marquee 
+                type="review"
+                direction="up"
+                :reviews="[
+                    ['text' => 'The best travel service I\'ve ever used!', 'name' => '- Jane Smith', 'location' => 'London, UK'],
+                    ['text' => 'Incredible destinations and knowledgeable guides.', 'name' => '- Hiroshi Tanaka', 'location' => 'Tokyo, Japan'],
+                    ['text' => 'They made planning our honeymoon so easy.', 'name' => '- Sarah & Michael', 'location' => 'Paris, France'],
+                    ['text' => 'Outstanding customer service and attention to detail.', 'name' => '- Ahmed Hassan', 'location' => 'Cairo, Egypt'],
+                    ['text' => 'Loved every moment of our customized tour!', 'name' => '- Lisa Chen', 'location' => 'Singapore']
+                ]"
+            />
         </div>
-    </div>
-    </div>
     </div>
 </section>
 

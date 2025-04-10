@@ -43,26 +43,30 @@
         </div>
 
         <!-- Right: Two Marquees -->
-        <div class="w-full md:w-1/2 grid grid-cols-2 gap-6"> <!-- Increased gap -->
+        <div class="w-full md:w-1/2 grid grid-cols-2 gap-6">
             <!-- Left Marquee (Top to Bottom) -->
-            <div class="relative h-[28rem] overflow-hidden"> <!-- Increased height -->
-                <div class="marquee-vertical-down flex flex-col gap-6"> <!-- Increased gap -->
-                    <div class="h-56 w-full bg-cover bg-center rounded-lg shadow-md" style="background-image: url('/images/marquee-one.png');"></div> <!-- Increased height -->
-                    <div class="h-56 w-full bg-cover bg-center rounded-lg shadow-md" style="background-image: url('/images/marquee-two.png');"></div>
-                    <div class="h-56 w-full bg-cover bg-center rounded-lg shadow-md" style="background-image: url('/images/marquee-three.png');"></div>
-                    <div class="h-56 w-full bg-cover bg-center rounded-lg shadow-md" style="background-image: url('/images/marquee-four.png');"></div>
-                </div>
-            </div>
+            <x-marquee 
+                type="image"
+                direction="down"
+                :images="[
+                    '/images/marquee-one.png',
+                    '/images/marquee-two.png',
+                    '/images/marquee-three.png',
+                    '/images/marquee-four.png'
+                ]"
+            />
 
             <!-- Right Marquee (Bottom to Top) -->
-            <div class="relative h-[28rem] overflow-hidden"> <!-- Increased height -->
-                <div class="marquee-vertical-up flex flex-col gap-6"> <!-- Increased gap -->
-                    <div class="h-56 w-full bg-cover bg-center rounded-lg shadow-md" style="background-image: url('/images/marquee-five.png');"></div> <!-- Increased height -->
-                    <div class="h-56 w-full bg-cover bg-center rounded-lg shadow-md" style="background-image: url('/images/marquee-six.png');"></div>
-                    <div class="h-56 w-full bg-cover bg-center rounded-lg shadow-md" style="background-image: url('/images/marquee-seven.png');"></div>
-                    <div class="h-56 w-full bg-cover bg-center rounded-lg shadow-md" style="background-image: url('/images/marquee-eight.png');"></div>
-                </div>
-            </div>
+            <x-marquee 
+                type="image"
+                direction="up"
+                :images="[
+                    '/images/marquee-five.png',
+                    '/images/marquee-six.png',
+                    '/images/marquee-seven.png',
+                    '/images/marquee-eight.png'
+                ]"
+            />
         </div>
 
         <!-- Buildings Vector -->
