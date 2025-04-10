@@ -16,5 +16,6 @@
 @include('partials.home.faq')
 
 <!-- Reviews Section -->
-@include('partials.home.review') <!-- Added this line -->
+@include('partials.home.review')
+
 @endsection

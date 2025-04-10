@@ -20,12 +20,12 @@
     </div>
 
     <!-- Pop-up Menu -->
-    <div id="popupMenu" class="absolute top-full left-0 w-64 bg-white shadow-md hidden">
+    <div id="popupMenu" class="absolute top-full left-0 w-64 bg-white shadow-md z-50 hidden">
         <ul class="flex flex-col p-4">
             <!-- Finds Stays -->
             <li class="flex items-center gap-2 py-2 hover:bg-gray-100">
                 <i class="bi bi-house-fill text-gray-500"></i> <!-- Solid Bootstrap Icon -->
-                <a href="#" class="block">Find Stays</a>
+                <a href="{{ route('findStays') }}" class="block">Find Stays</a>
             </li>
 
             <!-- Plan Tour -->
@@ -85,9 +85,13 @@
         const hamburgerButton = document.getElementById('hamburgerButton');
         const popupMenu = document.getElementById('popupMenu');
 
-        // Toggle the visibility of the pop-up menu
-        hamburgerButton.addEventListener('click', function() {
-            popupMenu.classList.toggle('hidden');
-        });
+        if (hamburgerButton && popupMenu) {
+            // Toggle the visibility of the pop-up menu
+            hamburgerButton.addEventListener('click', function() {
+                popupMenu.classList.toggle('hidden');
+            });
+        } else {
+            console.error('Hamburger button or popup menu not found');
+        }
     });
 </script>
