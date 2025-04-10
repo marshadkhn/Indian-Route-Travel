@@ -20,7 +20,7 @@
                     class="relative flex flex-col items-center justify-center bg-cover bg-center rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 text-white"
                     style="background-image: url('{{ asset($card['image']) }}'); height: 400px;">
                     <!-- Overlay -->
-                    <!-- <div class="absolute inset-0 bg-black bg-opacity-0 rounded-lg z-0"></div> -->
+                    <div class="absolute inset-0 bg-black/70 rounded-lg z-0"></div>
 
                     <!-- Text Section -->
                     <h3 class="relative text-lg font-bold mb-2 z-10">{{ $card['title'] }}</h3>
