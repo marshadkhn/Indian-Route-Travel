@@ -54,19 +54,19 @@
             <!-- Plan Tour -->
             <li class="flex items-center gap-2 py-2 hover:bg-gray-100">
                 <i class="bi bi-geo-alt-fill text-gray-500"></i>
-                <a href="#" class="block">Plan Tour</a>
+                <a href="{{ route('planTour') }}" class="block">Plan Tour</a>
             </li>
 
             <!-- Car Rent -->
             <li class="flex items-center gap-2 py-2 hover:bg-gray-100">
                 <i class="bi bi-car-front-fill text-gray-500"></i>
-                <a href="#" class="block">Car Rent</a>
+                <a href="{{ route('carRent') }}" class="block">Car Rent</a>
             </li>
 
             <!-- Get a Guide -->
             <li class="flex items-center gap-2 py-2 hover:bg-gray-100">
                 <i class="bi bi-person-fill text-gray-500"></i>
-                <a href="#" class="block">Get a Guide</a>
+                <a href="{{ route('getGuide') }}" class="block">Get a Guide</a>
             </li>
 
             <!-- Divider -->

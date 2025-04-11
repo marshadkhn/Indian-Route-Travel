@@ -9,12 +9,12 @@
     
     // Button properties
     'buttons' => [
-        ['icon' => 'bi-house-fill', 'text' => 'Find Stays'],
-        ['icon' => 'bi-geo-alt-fill', 'text' => 'Plan Tour'],
-        ['icon' => 'bi-car-front-fill', 'text' => 'Car Rent'],
-        ['icon' => 'bi-person-fill', 'text' => 'Get a Guide']
+        ['icon' => 'bi-house-fill', 'text' => 'Find Stays', 'route' => 'findStays'],
+        ['icon' => 'bi-geo-alt-fill', 'text' => 'Plan Tour', 'route' => 'planTour'],
+        ['icon' => 'bi-car-front-fill', 'text' => 'Car Rent', 'route' => 'carRent'],
+        ['icon' => 'bi-person-fill', 'text' => 'Get a Guide', 'route' => 'getGuide']
     ],
-    'buttonColumns' => 'grid-cols-2 md:grid-cols-4',
+    'buttonColumns' => 'grid-cols-2 lg:grid-cols-4',
     
     // Marquee Images
     'leftMarqueeImages' => [
@@ -33,7 +33,7 @@
     // Styling
     'background' => 'bg-gray-100',
     'textAlignment' => 'text-center md:text-left',
-    'padding' => 'py-20',
+    'padding' => 'p-20',
     'marqueeGap' => '6',
     'buildingsVector' => '/images/buildings-vector.png',
     
@@ -42,9 +42,9 @@
 ])
 
 <section class="relative {{ $background }} h-screen overflow-hidden {{ $padding }}">
-    <div class="container mx-auto flex flex-col md:flex-row gap-12 relative">
+    <div class="container mx-auto flex flex-col md:flex-row   relative">
         <!-- Left: Text and Content (Buttons or Search Form) -->
-        <div class="relative container w-full h-auto md:w-1/2 {{ $textAlignment }} ml-2 relative  h-screen" style="font-family: 'Montserrat', sans-serif;">
+        <div class="relative  w-full h-auto md:w-1/2 {{ $textAlignment }} ml-2 relative  h-screen" style="font-family: 'Montserrat', sans-serif;">
             <h2 class="text-2xl md:text-3xl font-semibold text-gray-700">{{ $subheading }}</h2>
             <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mt-2">{{ $heading }}</h1>
             <p class="text-xl md:text-xl text-gray-600 mt-2">{{ $description }}</p>
@@ -52,14 +52,14 @@
             <!-- Content based on type (buttons or search form) -->
             @if($type === 'buttons')
                 <!-- Buttons with Icons -->
-                <div class="mt-12 grid {{ $buttonColumns }} gap-6">
+                <div class="mt-12 grid {{ $buttonColumns }} gap-6 ">
                     @foreach($buttons as $button)
-                    <div class="flex flex-col items-center">
+                    <a href="{{ isset($button['route']) ? route($button['route'], [], false) : '#' }}" class="flex flex-col items-center md:items-start justify-center hover:opacity-80 transition-opacity">
                         <div class="h-16 w-16 bg-white text-black rounded-full flex items-center justify-center shadow-md hover:bg-black hover:text-white transition-colors duration-300">
                             <i class="bi {{ $button['icon'] }} text-2xl"></i>
                         </div>
                         <p class="mt-2 text-sm text-gray-800">{{ $button['text'] }}</p>
-                    </div>
+                    </a>
                     @endforeach
                 </div>
             @elseif($type === 'searchForm')
@@ -110,7 +110,9 @@
                                     <option value="2">2 Guests</option>
                                     <option value="3">3 Guests</option>
                                     <option value="4">4 Guests</option>
-                                    <option value="5+">5+ Guests</option>
+                                    <option value="4">5 Guests</option>
+                                    <option value="4">6 Guests</option>
+                                    <option value="5+">7+ Guests</option>
                                 </select>
                             </div>
                         </div>

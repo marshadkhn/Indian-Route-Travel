@@ -10,8 +10,6 @@
         description="for Your Trip."
         type="searchForm"
         formRoute="findStays.search"
-        :leftMarqueeImages="['/images/marquee-one.png', '/images/marquee-two.png', '/images/marquee-three.png', '/images/marquee-four.png']"
-        :rightMarqueeImages="['/images/marquee-five.png', '/images/marquee-six.png', '/images/marquee-seven.png', '/images/marquee-eight.png']"
     />
 
     <!-- Featured Stays Section with Reusable Cards -->

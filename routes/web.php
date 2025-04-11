@@ -29,8 +29,28 @@ Route::get('/find-stays', [App\Http\Controllers\FindStaysController::class, 'ind
 Route::get('/find-stays/search', [App\Http\Controllers\FindStaysController::class, 'search'])->name('findStays.search');
 
 Route::get('/planTour', function () {
-    return view('partials.planTour.mainPlanTour');
+    return view('pages.mainPlanTour');
 })->name('planTour');
+
+// Add new route for all packages page
+Route::get('/packages', function () {
+    return view('pages.allPackages');
+})->name('all.packages');
+
+// Add missing routes for hero buttons
+Route::get('/car-rent', function () {
+    return view('pages.carRent');
+})->name('carRent');
+
+// Add car rent search route
+Route::get('/car-rent/search', function () {
+    // This will be replaced with a controller method later
+    return view('pages.carRent');
+})->name('carRent.search');
+
+Route::get('/get-guide', function () {
+    return view('pages.getGuide');
+})->name('getGuide');
 
 // Authentication Routes
 Route::middleware('guest')->group(function () {

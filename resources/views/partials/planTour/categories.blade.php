@@ -36,14 +36,5 @@ $categoriesData = json_decode($categoriesJson, true);
             </div>
             @endforeach
         </div>
-
-        <!-- View All Button -->
-        <div class="text-center mt-12">
-            <a
-                href="{{ $categoriesData['cta']['url'] }}"
-                class="inline-block px-8 py-3 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-colors">
-                {{ $categoriesData['cta']['text'] }}
-            </a>
-        </div>
     </div>
 </section>
