@@ -1,21 +1,19 @@
+
 <footer class="bg-gray-100 py-10">
     <div class="container mx-auto max-w-6xl">
         <div class="flex flex-wrap justify-between items-start">
             <!-- Logo Section -->
-            <div class="w-full md:w-1/5 mb-6 md:mb-0">
+            <div class="w-full md:w-1/5 mb-6 md:mb-0 ">
                 <img src="{{ asset('images/Main-Logo.png') }}" alt="Indian Travel Routes Logo" class="h-56 mb-4">
-                <div class="flex space-x-4">
+                <div class="flex space-x-4 justify-center ">
                     <a href="#" class="text-gray-600 hover:text-gray-800">
-                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-facebook-f fa-lg"></i>
                     </a>
                     <a href="#" class="text-gray-600 hover:text-gray-800">
-                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube fa-lg"></i>
                     </a>
                     <a href="#" class="text-gray-600 hover:text-gray-800">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#" class="text-gray-600 hover:text-gray-800">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-instagram fa-lg"></i>
                     </a>
                 </div>
             </div>

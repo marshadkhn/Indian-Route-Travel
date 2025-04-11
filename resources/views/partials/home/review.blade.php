@@ -1,5 +1,5 @@
-<section class="bg-white py-10">
-    <div class="container mx-auto max-w-6xl">
+<section class="bg-white py-10 h-screen overflow-hidden mb-20">
+    <div class="container mx-auto max-w-6xl ">
         <!-- Review Section Heading -->
         <h2 class="text-sm font-bold text-gray-500 text-center mb-2 uppercase">Reviews</h2>
         <h3 class="text-2xl font-semibold text-gray-800 text-center mb-1">What Our Customers Say</h3>

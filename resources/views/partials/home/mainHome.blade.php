@@ -4,7 +4,7 @@
 
 @section('content')
 <!-- Hero Section -->
-@include('partials.home.hero')
+@include('components.hero')
 
 <!-- Suggestions Section -->
 @include('partials.home.suggestions')
