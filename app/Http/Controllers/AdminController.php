@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Booking;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -34,19 +35,29 @@ class AdminController extends Controller
     }
     
     /**
-     * Show the admin dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * Display the admin dashboard.
      */
     public function dashboard()
     {
         $this->isAdmin();
         
+        // Get counts for dashboard stats
         $usersCount = User::count();
+        $bookingsCount = Booking::count();
+        $pendingBookings = Booking::where('status', 'pending')->count();
         
-        return view('admin.dashboard', [
-            'usersCount' => $usersCount
-        ]);
+        // Get recent bookings
+        $recentBookings = Booking::with('user')
+                            ->latest()
+                            ->take(5)
+                            ->get();
+                            
+        return view('admin.dashboard', compact(
+            'usersCount', 
+            'bookingsCount', 
+            'pendingBookings',
+            'recentBookings'
+        ));
     }
     
     /**

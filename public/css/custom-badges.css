@@ -1,0 +1,86 @@
+/* Custom Badge Styles */
+
+/* Status Badge Backgrounds */
+.badge-pending-bg {
+    background-color: rgb(254 243 199); /* yellow-100 equivalent */
+}
+
+.badge-confirmed-bg {
+    background-color: rgb(220 252 231); /* green-100 equivalent */
+}
+
+.badge-cancelled-bg {
+    background-color: rgb(254 226 226); /* red-100 equivalent */
+}
+
+.badge-completed-bg {
+    background-color: rgb(243 244 246); /* gray-100 equivalent */
+}
+
+/* Status Badge Text Colors */
+.badge-pending-text {
+    color: rgb(146 64 14); /* yellow-800 equivalent */
+}
+
+.badge-confirmed-text {
+    color: rgb(6 95 70); /* green-800 equivalent */
+}
+
+.badge-cancelled-text {
+    color: rgb(153 27 27); /* red-800 equivalent */
+}
+
+.badge-completed-text {
+    color: rgb(31 41 55); /* gray-800 equivalent */
+}
+
+/* Status Badge Dot Colors */
+.badge-pending-dot {
+    color: rgb(250 204 21); /* yellow-400 equivalent */
+}
+
+.badge-confirmed-dot {
+    color: rgb(34 197 94); /* green-500 equivalent */
+}
+
+.badge-cancelled-dot {
+    color: rgb(220 38 38); /* red-600 equivalent */
+}
+
+.badge-completed-dot {
+    color: rgb(107 114 128); /* gray-500 equivalent */
+}
+
+/* Booking Type Badge Backgrounds */
+.badge-stay-bg {
+    background-color: rgb(219 234 254); /* blue-100 equivalent */
+}
+
+.badge-tour-bg {
+    background-color: rgb(220 252 231); /* green-100 equivalent */
+}
+
+.badge-car-bg {
+    background-color: rgb(254 243 199); /* yellow-100 equivalent */
+}
+
+.badge-guide-bg {
+    background-color: rgb(237 233 254); /* purple-100 equivalent */
+}
+
+/* Booking Type Badge Text Colors */
+.badge-stay-text {
+    color: rgb(30 64 175); /* blue-800 equivalent */
+}
+
+.badge-tour-text {
+    color: rgb(6 95 70); /* green-800 equivalent */
+}
+
+.badge-car-text {
+    color: rgb(146 64 14); /* yellow-800 equivalent */
+}
+
+.badge-guide-text {
+    color: rgb(91 33 182); /* purple-800 equivalent */
+}

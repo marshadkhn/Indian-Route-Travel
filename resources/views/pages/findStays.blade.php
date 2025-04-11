@@ -9,16 +9,16 @@
         heading="Perfect Stay"
         description="for Your Trip."
         type="searchForm"
-        formRoute="findStays.search"
     />
 
     <!-- Featured Stays Section with Reusable Cards -->
     <section class="py-10 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-2xl font-bold mb-6">Featured Stays</h2>
+            <h2 class="text-2xl font-bold">Featured Stays</h2>
+           
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Using reusable card components -->
+                <!-- Using reusable card components with booking button -->
                 <x-stays.card 
                     image="{{ asset('images/marquee-seven.png') }}"
                     name="Luxury Villa Resort"
@@ -26,6 +26,7 @@
                     location="Goa, India"
                     price="₹8,999"
                     detailsUrl="#"
+                    :showBookingButton="true"
                 />
                 
                 <x-stays.card 
@@ -35,6 +36,7 @@
                     location="Shimla, India"
                     price="₹5,499"
                     detailsUrl="#"
+                    :showBookingButton="true"
                 />
                 
                 <x-stays.card 
@@ -44,13 +46,12 @@
                     location="Jaipur, India"
                     price="₹7,299"
                     detailsUrl="#"
+                    :showBookingButton="true"
                 />
             </div>
         </div>
     </section>
 
     <!-- Reviews Section -->
-@include('partials.home.review')
-
-
+    @include('partials.home.review')
 @endsection

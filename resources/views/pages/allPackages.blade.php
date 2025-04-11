@@ -7,7 +7,10 @@
         subheading="Explore All"
         heading="Tour Packages"
         description="Find your perfect vacation package."
-        type="buttons"
+        type="bookingButton"
+        bookingButtonText="Book a Tour Package"
+        bookingButtonType="primary"
+        bookingButtonSize="lg"
     />
 
     @include('partials.planTour.packages', ['showAll' => true])

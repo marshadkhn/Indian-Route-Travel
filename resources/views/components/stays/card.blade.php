@@ -4,7 +4,8 @@
     'rating' => 4.5,
     'location' => 'Location, India',
     'price' => '₹4,999',
-    'detailsUrl' => '#'
+    'detailsUrl' => '#',
+    'showBookingButton' => true
 ])
 
 <div class="relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow h-96">
@@ -50,10 +51,25 @@
                     <span class="text-gray-200 text-sm">/night</span>
                 </div>
                 
-                <!-- View Details Button -->
-                <a href="{{ $detailsUrl }}" class="bg-[#8DD3BB] hover:bg-[#7bc0a9] text-gray-800 px-3 py-1.5 rounded text-sm font-medium transition-colors">
-                    View Details
-                </a>
+                <!-- Buttons -->
+                <div class="flex gap-2">
+                    @if($showBookingButton)
+                        <x-booking-button 
+                            text="Book" 
+                            size="sm" 
+                            :params="[
+                                'type' => 'stay', 
+                                'name' => $name, 
+                                'location' => $location,
+                                'price' => $price
+                            ]" 
+                        />
+                    @endif
+                    
+                    <a href="{{ $detailsUrl }}" class="bg-white hover:bg-gray-100 text-gray-800 px-3 py-1.5 rounded text-sm font-medium transition-colors">
+                        View Details
+                    </a>
+                </div>
             </div>
         </div>
     </div>
